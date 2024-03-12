@@ -12,7 +12,7 @@
     "build:prod": "vite build --mode production",
     "build:staging": "vite build --mode staging",
     "lint:style": "stylelint \"./**/*.{css,scss,vue,html}\" --fix",
-    "lint-staged": "lint-staged",
+    "lint-staged": "lint-staged lint:style",
     "prepare": "husky install"
   },
   "dependencies": {
