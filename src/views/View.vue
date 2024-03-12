@@ -3,13 +3,18 @@
  * @Author: 张泽雨
  * @Date: 2024-03-07 11:09:09
  * @LastEditors: 张泽雨
- * @LastEditTime: 2024-03-08 10:57:35
+ * @LastEditTime: 2024-03-12 14:42:12
  * @FilePath: \vue3-warter\src\views\View.vue
 -->
 
 <template>
   <div>sdf{{ age }} --- {{ count }}</div>
-  <InputBar v-model="count" v-model:title="titleName" class="ffff" data-id="777"></InputBar>
+  <InputBar
+    v-model="count"
+    v-model:title="titleName"
+    class="ffff"
+    data-id="777"
+  ></InputBar>
   {{ count }}
 </template>
 
@@ -19,7 +24,11 @@ import InputBar from './InputBar.vue'
 
 const author = reactive({
   name: 'John Doe',
-  books: ['Vue 2 - Advanced Guide', 'Vue 3 - Basic Guide', 'Vue 4 - The Mystery'],
+  books: [
+    'Vue 2 -fdg  Advanced Guide',
+    'Vue 3 - Basic Guide',
+    'Vue 4 - The Mystery'
+  ],
   num: 0,
   ff: 1
 })

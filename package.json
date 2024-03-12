@@ -53,9 +53,7 @@
   "lint-staged": {
     "*.{js,vue}": "eslint --fix"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint:style"
-    }
+  "gitHooks": {
+    "pre-commit": "npm lint"
   }
 }
