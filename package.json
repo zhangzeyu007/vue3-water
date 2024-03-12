@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore lint:style",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
     "build:prod": "vite build --mode production",
     "build:staging": "vite build --mode staging",
-    "lint:style": "stylelint \"./**/*.{css,scss,vue,html}\" --fix"
+    "lint:style": "stylelint \"./**/*.{css,scss,vue,html}\" --fix",
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -20,14 +22,16 @@
     "whatwg-url": "^14.0.0"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^19.1.0",
     "@rushstack/eslint-patch": "^1.3.3",
     "@vitejs/plugin-vue": "^5.0.3",
     "@vue/eslint-config-prettier": "^8.0.0",
+    "commitlint": "^19.1.0",
     "eslint": "^8.49.0",
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-stylelint": "^0.1.1",
     "eslint-plugin-vue": "^9.17.0",
-    "husky": "^9.0.11",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.2",
     "naive-ui": "^2.38.1",
     "node-html-parser": "^6.1.12",
@@ -51,9 +55,9 @@
     "vite": "^5.0.11"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint --fix"
-  },
-  "gitHooks": {
-    "pre-commit": "npm lint"
+    "*.{js,ts,vue,jsx,tsx}": [
+      "eslint --cache --fix",
+      "git add"
+    ]
   }
 }
