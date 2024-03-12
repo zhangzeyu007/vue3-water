@@ -17,11 +17,12 @@ import { RouterView } from "vue-router";
 <style scoped lang="scss">
 .nav {
   display: flex;
+
   .book {
     display: inline-block;
     padding: 10px;
     margin: 10px;
-    color: #000000;
+    color: #000;
     background-color: #f2f2f2;
   }
 }

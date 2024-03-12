@@ -11,7 +11,7 @@
     "format": "prettier --write \"./**/*.{html,vue,ts,js,json,md}\"",
     "build:prod": "vite build --mode production",
     "build:staging": "vite build --mode staging",
-    "lint:style": "stylelint \"./**/*.{css,scss,vue,html}\" --fix",
+    "lint:style": "stylelint \"./**/*.{css,scss,vue}\" --fix",
     "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
