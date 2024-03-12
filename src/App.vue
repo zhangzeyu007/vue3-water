@@ -18,9 +18,9 @@ import { RouterView } from "vue-router";
 .nav {
   display: flex;
   .book {
+    background-color: #f2f2f2;
     padding: 10px;
     margin: 10px;
-    background-color: #f2f2f2;
     display: inline-block;
   }
 }

@@ -12,7 +12,7 @@
     "build:prod": "vite build --mode production",
     "build:staging": "vite build --mode staging",
     "lint:style": "stylelint \"./**/*.{css,scss,vue,html}\" --fix",
-    "lint-staged": "lint-staged lint:style",
+    "lint-staged": "lint-staged",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -57,8 +57,13 @@
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
       "eslint --cache --fix",
-      "stylelint --cache --fix",
+      "prettier --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run lint:style"
+    }
   }
 }
