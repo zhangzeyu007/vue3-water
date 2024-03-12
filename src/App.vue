@@ -7,7 +7,7 @@
  * @FilePath: \vue3-warter\src\App.vue
 -->
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView } from "vue-router";
 </script>
 
 <template>
@@ -18,6 +18,9 @@ import { RouterView } from 'vue-router'
 .nav {
   display: flex;
   .book {
+    padding: 10px;
+    margin: 10px;
+    background-color: #f2f2f2;
     display: inline-block;
   }
 }

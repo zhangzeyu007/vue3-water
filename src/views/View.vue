@@ -3,12 +3,12 @@
  * @Author: 张泽雨
  * @Date: 2024-03-07 11:09:09
  * @LastEditors: 张泽雨
- * @LastEditTime: 2024-03-12 14:42:12
+ * @LastEditTime: 2024-03-12 14:47:34
  * @FilePath: \vue3-warter\src\views\View.vue
 -->
 
 <template>
-  <div>sdf{{ age }} --- {{ count }}</div>
+  <div>sdf{{ age }} --fggfg- {{ count }}</div>
   <InputBar
     v-model="count"
     v-model:title="titleName"

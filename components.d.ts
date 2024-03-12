@@ -15,6 +15,7 @@ declare module 'vue' {
     NButton: typeof import('naive-ui')['NButton']
     NCascader: typeof import('naive-ui')['NCascader']
     NCheckbox: typeof import('naive-ui')['NCheckbox']
+    'NCheckbox;': typeof import('naive-ui')['NCheckbox;']
     NSpace: typeof import('naive-ui')['NSpace']
     NSwitch: typeof import('naive-ui')['NSwitch']
     RouterLink: typeof import('vue-router')['RouterLink']
