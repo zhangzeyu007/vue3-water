@@ -59,16 +59,13 @@
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
       "eslint --cache --fix",
-      "prettier --write",
-      "git add",
-      "npm run lint",
-      "npm run lint:style"
+      "prettier --write"
     ],
     "<glob-pattern>": "<command>"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run lint:style"
+      "pre-commit": "lint-staged"
     }
   }
 }
