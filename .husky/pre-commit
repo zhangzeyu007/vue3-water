@@ -1,4 +1,12 @@
+###
+ # @Description: 
+ # @Author: 张泽雨
+ # @Date: 2024-03-12 17:40:08
+ # @LastEditors: 张泽雨
+ # @LastEditTime: 2024-03-12 17:56:29
+ # @FilePath: \vue3-water\.husky\pre-commit
+### 
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
-
-npx lint-staged
+echo -e "\033[33m ------------------- 正在对提交的代码执行操作 -------------------- \033[0m"
+npx --no-install lint-staged
