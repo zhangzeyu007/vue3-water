@@ -3,12 +3,13 @@
  * @Author: 张泽雨
  * @Date: 2024-03-12 17:49:46
  * @LastEditors: 张泽雨
- * @LastEditTime: 2024-03-12 19:50:53
+ * @LastEditTime: 2024-03-13 10:20:42
  * @FilePath: \vue3-water\commitlint.config.cjs
  */
 module.exports = {
   extends: ["@commitlint/config-conventional"],
   rules: {
+    // type 的类型定义: 表示 commit 的类型，包括 build、feat、fix、update、refactor、docs、chore、style、revert、perf、test
     "type-enum": [
       2,
       "always",
@@ -26,12 +27,12 @@ module.exports = {
         "test" // 测试单元
       ]
     ],
-    "type-case": [0],
-    "type-empty": [0],
-    "scope-empty": [0],
-    "scope-case": [0],
-    "subject-full-stop": [0, "never"],
-    "subject-case": [0, "never"],
-    "header-max-length": [0, "always", 72]
+    // "type-case": [0],
+    // "type-empty": [0],
+    // "scope-empty": [0],
+    // "scope-case": [0],
+    // "subject-full-stop": [0, "never"],
+    "subject-case": [0, "never"] // subject 大小写不做校验
+    // "header-max-length": [0, "always", 72]
   }
 };
